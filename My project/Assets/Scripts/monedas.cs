@@ -8,8 +8,8 @@ public class monedas : MonoBehaviour
     float velocidadRotacion = 15f;
     [SerializeField]
     GameObject Moneda;
-
-
+    //[SerializeField]
+    //GameObject Particulas;
     // Update is called once per frame
     void Update()
     {
@@ -17,8 +17,8 @@ public class monedas : MonoBehaviour
     }
     void OnTriggerEnter (Collider jugador) {
         if (jugador.tag == "Player") {
-            Moneda.SetActive (false);
+            //Moneda.SetActive (false);
+            Destroy (Moneda, 0.75f);
         }
     }
-   
 }
