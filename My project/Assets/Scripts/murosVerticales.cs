@@ -1,3 +1,5 @@
+// Este código cumple con la función de hacer desplazarse obstáculos verticalmente.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

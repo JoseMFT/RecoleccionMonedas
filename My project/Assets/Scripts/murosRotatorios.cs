@@ -1,3 +1,5 @@
+// Este código hace girar obstáculos.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,3 +1,7 @@
+/* Este código controla las funciones principales del jugador, como el movimiento,
+ * el tiempo que pasa en partida, o el número de monedas que recoge, así como controlar
+ * la música de fondo, y generar la pantalla de victoria llegado el momento. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,22 +32,16 @@ public class movimientoJugador: MonoBehaviour {
     [SerializeField]
     GameObject canvasFinal;
     
-    
-    
-    // Start is called before the first frame update
     void Start () {
         sphere = GetComponent<Rigidbody> ();
-        Respawn = transform.position;
+        Respawn = transform.position; // El juego toma la posición del jugador en el primer frame para luego usarla como respawn en caso de que el jugador salga del mapa.
     }
 
-    // Update is called once per frame
     void Update () {
-
         if (jugando != false) {
             tiempoSegundos = tiempoSegundos + Time.deltaTime;
         }
-
-        if (tiempoSegundos >= 60f) {
+        if (tiempoSegundos >= 60f) { // Cada 60 segundos el número de minutos aumenta, y el número de segundos se reinicia a 0.
             ++tiempoMinutos;
             tiempoSegundos = 0;
         }
@@ -61,9 +59,9 @@ public class movimientoJugador: MonoBehaviour {
             ++contadorMonedas;
             Debug.Log (contadorMonedas);
             choque.GetComponent<AudioSource> ().Play ();
-            Instantiate (prefabParticles, choque.transform.position, choque.transform.rotation);
+            Instantiate (prefabParticles, choque.transform.position, choque.transform.rotation); // Se generan partículas cuando el jugador toca una moneda.
         }
-        if (choque.tag == "Respawn") {
+        if (choque.tag == "Respawn") { // Plataforma debajo del mapa que al ser tocada envía al jugador a su posición de inicio.
             transform.position = Respawn;
         }
     }
@@ -73,7 +71,7 @@ public class movimientoJugador: MonoBehaviour {
     }
 
     public void ClickEnMusica () {
-        Debug.Log ("Ha silenciado la música");
+        Debug.Log ("Ha silenciado la música"); // Pausa y continúa sonando la música cada vez que se hace clic sobre la casilla donde dice "Música".
         if (Play == true) {
             Play = false;
             GetComponent<AudioSource> ().Pause ();

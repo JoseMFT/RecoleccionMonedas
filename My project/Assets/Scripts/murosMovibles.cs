@@ -1,3 +1,6 @@
+/* Este código desplaza los objetos sobre los que ha sido aplicado una distancia específica
+ * de izquierda a derecha. */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
