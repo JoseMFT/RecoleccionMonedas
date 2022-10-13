@@ -1,0 +1,24 @@
+José María Frías Tejera - CIFP César Manrique
+Enlace al repositorio de GitHub: https://github.com/JoseMFT/RecoleccionMonedas
+
+-------------------------------------------- EL JUEGO ---------------------------------------------
+
+COLLECTOR es un juego en el cual tu objetivo principal es recolectar las 15 monedas
+repartidas por el mapa en el menor tiempo posible, ello sorteando obstáculos como plataformas
+que suben y bajan, que se desplazan de izquierda a derecha, y otras que giran. Además de obstáculos
+fijo como rampas, esferas o muros.
+
+Al recoger una moneda escucharás un sonido y aparecerán unas partículas amarillas.
+
+El juego tiene una escena que hace de menú de inicio, con su propia portada, título y música.
+
+La música en partida se puede activar o desactivar haciendo clic sobre la caja que dice "Música".
+
+Al finalizar la partida aparecerá una pantalla en negro felicitando al jugador y mostrando
+el tiempo tardado en minutos y segundos, aunque no en horas y medidas de mayor magnitud.
+
+El juego, además, cuenta con un sistema que envía al jugador al respawn en caso de que este se
+salga de la zona de juego (cosa que no debería suceder, pero que se contempla que pueda ocurrir).
+
+Los scripts de juego están comentados, y entre los directorios del repositorio se encuentra el 
+archivo de blender que he usado para crear la portada del juego.

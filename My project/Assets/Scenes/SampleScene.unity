@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44129837, g: 0.49010026, b: 0.57015264, a: 1}
+  m_IndirectSpecularColor: {r: 0.44129857, g: 0.4901014, b: 0.57015187, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3331,7 +3331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d654575279d1e44870d26da90e43d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Impulse: 60
+  Impulse: 80
   musicaJuego: {fileID: 2076488906}
   totalTiempo: {fileID: 2124164441}
   prefabParticles: {fileID: 7422367128347588161, guid: 8c6a145095918e04cacc6c8be2668479, type: 3}
